@@ -1108,7 +1108,6 @@ footer {
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
 
         .news {
             
@@ -1170,16 +1169,96 @@ footer {
 
 
         .search {
-            padding-left: 300px;
+            margin-top: 165px;
+            padding-left: 200px;
 
-            .recent {
+            form {
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
                 border: 1px solid #D1D1D1;
-                padding: 25px;
+                border-radius: 50px;
+                background-color: #F3F3F3;
 
-                h5 {
+                i {
+                    padding-left: 30px;
+                    padding-right: 5px;
+                }
+                
+                
+                input {
+                    border: none;
+                    padding: 10px;
+                    background-color: #F3F3F3;
+                    flex-grow: 1;
+                    outline: none;
+            
                     
                 }
             }
+
+            a {
+                text-decoration: none;
+                color: #191919;
+
+                &:hover {
+                    color: rgba(0, 187, 255, 0.815);
+                }
+            }
+            
+            h1 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                padding-bottom: 10px;
+            }
+
+            h5 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 14px;
+            }
+
+            .recent {
+                border: 1px solid #D1D1D1;
+                padding: 50px;
+                width: 400px;
+                height: 540px;
+
+                .recent-content {
+                    padding-bottom: 20px;
+
+                    .border {
+                        margin-bottom: 10px;
+                    }
+                }
+
+            }
+
+            .categories {
+                border: 1px solid #D1D1D1;
+                width: 400px;
+                height: 320px;
+                padding: 50px;
+                margin-top: 20px;
+                margin-left: -50px;
+
+                h1 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    padding-bottom: 10px;
+                }
+
+                h5 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+
+                span {
+                    color: #666666;
+                }
+            }
+
         }
 
 
@@ -1199,9 +1278,161 @@ footer {
     .container {
         padding-top: 40px;
     }
+
+    .cards {
+        margin-bottom: 0 !important;
+    }
     
     .card {
         background-color: transparent;   
+    }
+}
+
+
+
+.contact {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contact-information {
+
+            .contact-box {
+                border: 1px solid #EEEEEE;
+                padding: 40px 140px 20px 100px;
+
+                i {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    background-color: #191919;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-left: -60px;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                    padding-bottom: 0;
+                }
+
+                .pp {
+                    padding-top: 10px;
+                    margin-bottom: 2px;
+                }
+
+            }
+
+        }
+    }
+
+
+}
+
+
+.contact-us-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    .container {
+        background-color: #F0EFE9;
+        padding-top: 100px;
+
+        h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        form {
+            margin-top: 30px;
+
+            .form-s {
+                display: flex;
+                justify-content: center;
+                
+                input {
+                    width: 80%;
+                    padding: 15px;
+                    outline: none;
+                    margin-bottom: 10px;
+                    border-radius: 50px;
+                    border: none;
+
+                    &:hover {
+                        border: 1px solid #f94c1c3b ;
+                    }
+                }
+
+                textarea {
+                    width: 80%;
+                    height: 15vh;
+                    padding: 15px;
+                    outline: none;
+                    margin-bottom: 30px;
+                    border-radius: 50px;
+                    border: none;
+                    outline: none;
+
+                    &:hover {
+                        border: 1px solid #f94c1c3b ;
+                    }
+                }
+
+            }
+        }
+
+        button {
+            width: 80%;
+            padding: 10px;
+            background-color: #F9D783;
+            border-radius: 50px;
+            border: none;
+            margin-bottom: 80px;
+            transition: 0.2s ease-in-out;
+            
+
+            &:hover {
+                background-color: #F0D082;
+                font-size: large;
+            }
+
+            i {
+                padding-left: 15px;
+            }
+        }
+
+
+
+    }
+}
+
+
+
+
+.google-map {
+    iframe {
+        width: 100%;
+        height: 600px
+        
     }
 }
 
